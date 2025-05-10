@@ -42,7 +42,7 @@ def near_BS (r, S0, K, T, sig):
 
 S0 = st.sidebar.number_input("Spot Price", 0.0, 10000.0, 100.0, step=0.25)
 K = st.sidebar.number_input("Strike Price", 0.0, 10000.0, 100.0, step=0.25)
-sig = st.sidebar.number_input("Volatility", 0.0, 1.0, 0.2, step=0.01)
+sig = st.sidebar.number_input("Volatility", 0.0, 100.0, 0.2, step=0.01)
 T = st.sidebar.number_input("Time to maturity (in years)", 0.0, 5.0, 1.0, step=0.1)
 r = st.sidebar.number_input("Risk-Free Interest Rate", 0.0, 0.5, 0.05, step=0.01)
 
