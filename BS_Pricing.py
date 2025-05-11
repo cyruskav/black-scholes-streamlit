@@ -3,15 +3,15 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from math import log, sqrt, exp
+from math import log,  exp
 from scipy.stats import norm
 
 st.set_page_config(layout="wide")
-st.title("Black Scholes Option Pricer")
+st.title("Black Scholes European Option Pricer")
 
 def BlackScholes (r, S0, K, T, sig):
-    d1 = (log(S0/K) + (r + ((sig**2)/2)) * T) / (sig * sqrt(T))
-    d2 = d1 - sig*sqrt(T)
+    d1 = (log(S0/K) + (r + ((sig**2)/2)) * T) / (sig * np.sqrt(T))
+    d2 = d1 - sig*np.sqrt(T)
 
     call_price = (S0 * norm.cdf(d1)) - (K * exp(-r*T) * norm.cdf(d2))
     put_price = (K * exp(-r*T) * norm.cdf(-d2)) - (S0 *  norm.cdf(-d1))
