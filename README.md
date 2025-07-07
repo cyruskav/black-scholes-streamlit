@@ -8,12 +8,7 @@ Built in python for educational and practical use.
 - Instantaneous updates upon changing parameters
 
 ## Running the App
-Locally:
+Check out the live app here:  
+[black-scholes-heatmap.streamlit.app](https://black-scholes-heatmap.streamlit.app)
 
-```bash
-git clone https://github.com/cyruskav/black-scholes-streamlit.git
-cd black-scholes-streamlit
-pip install -r requirements.txt
-streamlit run app.py
-
-Or just click the "Open in Streamlit" badge
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://black-scholes-heatmap.streamlit.app)
