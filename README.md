@@ -8,7 +8,7 @@ Built in python for educational and practical use.
 - Instantaneous updates upon changing parameters
 
 ## Running the App
-Check out the live app here:  
+Check out the live app here (if asleep, hit wake button and wait ~15 seconds):  
 [black-scholes-heatmap.streamlit.app](https://black-scholes-heatmap.streamlit.app)
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://black-scholes-heatmap.streamlit.app)
